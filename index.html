@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html lang=en>
+<head>
+<meta charset="utf-8">
+<meta name="description">
+<title>
+	Employee Information
+</title>
+<link href="styles.css" rel="stylesheet">
+
+</head>
+
+<body>
+<form id = "employeeInfo" action="/employeeInfo" method="post">
+		<fieldset>
+			<legend> Employee Information </legend>
+			<label for = "firstName"> First Name </label>
+			<input type = "text" id="firstName" name = "firstName" required = "true" autofocus "true"></input>
+			<label for = "lastName"> Last Name </label>
+			<input type = "text" id="lastName" name = "lastName" required = "true"></input>
+			<label for = "employeeNumber"> Employee Number </label>
+			<input type = "number" id="eeNumber" name = "employeeNumber" required = "true"> </input>
+			<label for = "title"> Title </label>
+			<input type = "text" id="title" name = "title" required = "true"> </input>
+			<label for = "lastReviewScore"> Last Review Score </label>
+			<input type = "number" id="lastReviewScore" name = "lastReviewScore" min="0" max="5" required = "true"> </input>
+			<label for = "salary"> Salary </label>
+			<input type = "number" id="salary" name = "salary" min="10000" max="1000000" required = "true"> </input>
+			<input type = "submit" value = "submit" action = "submit">
+		</fieldset>
+</form>
+	
+
+	<h2>List of Employees</h2>
+	<ul id="content"></ul>
+		
+	<script src="jquery-1.11.3.min.js"></script>
+	<script src="scripts.js"> </script>
+</body>
+</html>
+
