@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang=en>
+<head>
+<meta charset="utf-8">
+<meta name="description">
+<title>
+	Employee Information
+</title>
+<link href="styles3.css" rel="stylesheet">
+
+</head>
+
+<body>
+<form id = "EmployeeInfo" action="/employeeInfo" method="post">
+		<fieldset>
+			<legend> Employee Information </legend>
+			<!-- for and id should always match (command-? to comment out in html) -->
+			<label for = "FirstName"> First Name </label>
+			<input type = "text" id="FirstName" name = "FirstName" required = "true" autofocus "true"></input>
+			</br>
+			<label for = "LastName"> Last Name </label>
+			<input type = "text" id="LastName" name = "LastName" required = "true"></input>
+			</br>
+			<label for = "EmployeeNumber"> Employee Number </label>
+			<input type = "number" id="EmployeeNumber" name = "EmployeeNumber" required = "true"> </input>
+			</br>
+			<label for = "Title"> Title </label>
+			<input type = "text" id="Title" name = "Title" required = "true"> </input>
+			</br>
+			<label for = "LastReviewScore"> Last Review Score </label>
+			<input type = "number" id="LastReviewScore" name = "LastReviewScore" min="0" max="5" required = "true"> </input>
+			</br>
+			<label for = "Salary"> Salary </label>
+			<input type = "number" id="Salary" name = "Salary" min="10000" max="1000000" required = "true"> </input>
+			</br>
+			<input type = "submit" value = "submit" action = "submit">
+		</fieldset>
+</form>
+	
+
+	<h2>List of Employees</h2>
+	<ul id="employees"></ul>
+		
+	<script src="jquery-1.11.3.min.js"></script>
+	<script src="scripts3.js"> </script>
+</body>
+</html>
+
